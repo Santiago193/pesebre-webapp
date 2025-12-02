@@ -1,0 +1,102 @@
+/* TARJETA REAL */
+.tarjeta-real {
+    width: 100%;
+    height: 220px;
+    border-radius: 18px;
+    padding: 25px;
+    background: linear-gradient(135deg, #0f93ff, #0066cc);
+    color: #fff;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: transform 0.2s ease-out;
+    transform-style: preserve-3d;
+}
+
+/* Círculos decorativos */
+.tarjeta-real::before,
+.tarjeta-real::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+}
+
+.tarjeta-real::before {
+    width: 180px;
+    height: 180px;
+    top: -40px;
+    right: -40px;
+}
+
+.tarjeta-real::after {
+    width: 120px;
+    height: 120px;
+    bottom: -30px;
+    left: -30px;
+}
+
+/* Chip */
+.tarjeta-chip {
+    width: 60px;
+    height: 40px;
+    background: gold;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Número de tarjeta */
+.tarjeta-num {
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Fila inferior */
+.tarjeta-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Logo genérico tipo Mastercard */
+.card-logo {
+    width: 55px;
+    height: 35px;
+    background: linear-gradient(90deg, #ff5a5a, #ffa95a);
+    border-radius: 8px;
+}
+/* MÉTODOS DE PAGO PREMIUM */
+.metodos {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.method-item {
+    padding: 8px 14px;
+    background: #1f1f1f;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.method-item:hover {
+    background: #2b2b2b;
+    border-color: #5b9dff;
+    box-shadow: 0 0 12px rgba(91,157,255,0.4);
+    transform: translateY(-2px);
+}
+
+.method-item:active {
+    transform: scale(0.96);
+}

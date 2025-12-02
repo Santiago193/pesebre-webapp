@@ -1,0 +1,77 @@
+body {
+	background: #7a0000; /* Rojo oscuro navideño */
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Título */
+.titulo-novenas {
+	text-align: center;
+	color: #ffd966;
+	text-shadow: 0 0 8px #ffffff, 0 0 12px #ffcc00;
+	margin-top: 25px;
+	margin-bottom: 5px;
+	font-size: 2.7rem;
+	letter-spacing: 2px;
+}
+
+.subtitulo {
+	text-align: center;
+	color: #ffeccc;
+	margin-bottom: 30px;
+	font-size: 1.2rem;
+}
+
+/* TABLA PREMIUM NAVIDEÑA */
+.tabla-novenas {
+	width: 90%;
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 0;
+	background: linear-gradient(to bottom, #8b0000, #600000);
+	border: 3px solid gold;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Encabezados */
+.tabla-novenas th {
+	background: #b30000;
+	color: #fff;
+	padding: 16px;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-bottom: 3px solid gold;
+}
+
+/* Celdas */
+.tabla-novenas td {
+	padding: 15px;
+	color: #fff3e0;
+	font-size: 17px;
+	border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+}
+
+/* Primera columna */
+.tabla-novenas td:first-child {
+	font-weight: bold;
+	color: #ffee88;
+	font-size: 20px;
+}
+
+/* Hover */
+.tabla-novenas tr:hover td {
+	background: rgba(255, 215, 0, 0.18);
+	transition: 0.25s;
+}
+
+/* Responsive */
+@media ( max-width : 700px) {
+	.tabla-novenas {
+		font-size: 13px;
+	}
+	.tabla-novenas th, .tabla-novenas td {
+		padding: 8px;
+	}
+}

@@ -1,0 +1,135 @@
+/* ========= CONTENEDOR PRINCIPAL ========= */
+
+.trivia-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(20, 25, 45, 0.6);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(200, 150, 40, 0.4);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    color: #e7dba7;
+    text-align: center;
+}
+
+/* ========= ESTILOS DE TÍTULO ========= */
+
+.titulo-trivia {
+    color: #d1a022;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(200,150,40,0.5);
+}
+
+.intro-trivia {
+    color: #c7c7c7;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* ========= TARJETA DE LA PREGUNTA ========= */
+
+.pregunta-box {
+    background: rgba(25, 32, 55, 0.5);
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid rgba(200,150,40,0.4);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+.pregunta-box h2 {
+    font-size: 22px;
+    color: #e7bf5f;
+}
+
+/* ========= OPCIONES ========= */
+
+.opciones {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opciones label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: rgba(30, 40, 70, 0.6);
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+    text-align: left;
+
+    color: #ffe9a6 !important;
+    font-size: 17px;
+    font-weight: 500;
+
+    width: 100%;
+    overflow: visible !important;
+}
+
+
+
+.opciones label:hover {
+    background: rgba(200,150,40,0.25);
+}
+
+/* ========= BOTÓN ========= */
+
+.btn-comprobar {
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #c08a17, #8e6312);
+    color: #0d1325;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.btn-comprobar:hover {
+    background: linear-gradient(135deg, #e0b34a, #b68a20);
+    transform: translateY(-3px);
+}
+
+/* ========= RESULTADO ========= */
+
+.resultado {
+    margin-top: 15px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.resultado.correcto {
+    color: #9edb7e;
+    opacity: 1;
+}
+
+.resultado.incorrecto {
+    color: #ff7a7a;
+    opacity: 1;
+}
+
+.resultado.aviso {
+    color: #f5d472;
+    opacity: 1;
+}
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.texto-opcion {
+    display: inline-block;
+    color: #ffe9a6;
+    font-size: 17px;
+    font-weight: 500;
+}

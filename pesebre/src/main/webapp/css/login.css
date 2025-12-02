@@ -1,0 +1,131 @@
+/* ======== CONTENEDOR PRINCIPAL ======== */
+.login-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Fondo navideño cálido, NO blanco */
+    background: linear-gradient(135deg, #8b1e1e, #b32b2b, #d44848);
+    padding: 40px 0;
+}
+
+/* ======== TARJETA DE LOGIN ======== */
+.login-card {
+    width: 480px;                 /* MÁS GRANDE */
+    padding: 40px;
+    border-radius: 20px;
+
+    /* Fondo navideño elegante */
+    background: rgba(255, 235, 210, 0.97);
+
+    /* Borde dorado */
+    border: 4px solid #d4a753;
+
+    /* Sombra más marcada y amplia */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    animation: aparecer 0.9s ease;
+}
+
+/* Animación */
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.85); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* ======== TÍTULO ======== */
+.login-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #7a1616;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ======== FORMULARIO ======== */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #6b0f0f;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #b8b8b8;
+    font-size: 1rem;
+    background: #fffaf2;
+}
+
+.form-group input:focus {
+    border-color: #d4a753;
+    outline: none;
+    background: #fffbe8;
+}
+
+/* ======== BOTONES ======== */
+.form-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background-color: #7a1616;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #5c0f0f;
+}
+
+.btn-secondary {
+    background-color: #e7d4b2;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #d0bd9e;
+}
+
+/* ======== REGISTRO ======== */
+.register-text {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1rem;
+    color: #5c0f0f;
+}
+
+.register-link {
+    color: #7a1616;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+    color: #9b1e1e;
+}
+
+/* ======== ERROR ======== */
+.login-error {
+    color: #b30000;
+    text-align: center;
+    background: #ffd6d6;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #d89898;
+}

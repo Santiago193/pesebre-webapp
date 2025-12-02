@@ -1,0 +1,101 @@
+.admin-container {
+    width: 95%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/* TITULO */
+.admin-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #b30000;
+    margin-bottom: 30px;
+}
+
+/* TARJETAS */
+.card {
+    background: #ffffffdd;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+}
+
+/* CAMPOS */
+.fila {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.campo {
+    flex: 1;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #bbb;
+    background: white;
+    font-size: 15px;
+}
+
+/* BOTONES */
+.btn-buscar, .btn-guardar {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background: #0077cc;
+    color: white;
+}
+
+.btn-buscar:hover, .btn-guardar:hover {
+    background: #005a99;
+}
+
+.btn-editar {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-eliminar {
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* TABLA */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th {
+    background: #c00000;
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.tabla td {
+    background: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla input, .tabla select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #999;
+}

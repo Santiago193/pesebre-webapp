@@ -1,0 +1,137 @@
+/* ==================================== */
+/* HERO NAVIDEÑO */
+/* ==================================== */
+.hero-navidad {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: rgba(20, 25, 45, 0.6);
+    border-radius: 18px;
+    padding: 30px;
+    border: 1px solid rgba(170, 130, 0, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+.hero-img {
+    width: 380px;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero-texto h1 {
+    color: #d1a022;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    color: #c7c7c7;
+    font-size: 18px;
+    max-width: 430px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #c08a17, #8e6312);
+    color: #0d1325;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: linear-gradient(135deg, #e0b34a, #b68a20);
+    transform: translateY(-2px);
+}
+
+/* ==================================== */
+/* TARJETAS NAVIDEÑAS */
+/* ==================================== */
+.seccion-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+.tarjeta {
+    background: rgba(25, 32, 55, 0.6);
+    padding: 20px;
+    width: 260px;
+    border-radius: 15px;
+    border: 1px solid rgba(180,130,30,0.4);
+    text-align: center;
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+}
+
+.tarjeta img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    color: #d1a022;
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.tarjeta p {
+    color: #c7c7c7;
+    font-size: 14px;
+}
+
+/* ==================================== */
+/* SECCIÓN INFORMACIÓN */
+/* ==================================== */
+.seccion-info {
+    max-width: 950px;
+    margin: 40px auto;
+    background: rgba(20, 25, 45, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(180,130,30,0.4);
+}
+
+.seccion-info h2 {
+    color: #d1a022;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.seccion-info p {
+    color: #c7c7c7;
+    font-size: 17px;
+}
+
+/* ==================================== */
+/* FOOTER */
+/* ==================================== */
+.footer-navidad {
+    margin-top: 30px;
+    text-align: center;
+    padding: 12px;
+    color: #d1a022;
+    font-size: 14px;
+}

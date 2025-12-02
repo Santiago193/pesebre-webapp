@@ -1,0 +1,110 @@
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('../images/nav_header.png') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 95%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+/* TABLA NAVIDEÑA */
+.tabla-container {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 28px;
+    color: #d12222;
+    margin-bottom: 15px;
+}
+
+.tabla-navidad {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+.tabla-navidad th {
+    background: #d12222;
+    color: white;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.tabla-navidad td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+    color: #222;   /* texto oscuro */
+    font-weight: 500; /* un poco más grueso */
+}
+
+
+.tabla-navidad tr:hover {
+    background: #ffeaea;
+}
+
+/* TARJETAS ANIMADAS */
+.contenedor-tarjetas {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0px 20px 25px rgba(0,0,0,0.25);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    animation: flotar 3s infinite ease-in-out;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.card h3 {
+    color: #b21818;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+}

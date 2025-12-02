@@ -1,0 +1,142 @@
+/* =============================== */
+/*   ESTILOS GENERALES DEL PROYECTO */
+/* =============================== */
+
+/* Reset suave */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* =============================== */
+/*               HEADER            */
+/* =============================== */
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #8b0000, #b30000); /* Rojo navidad elegante */
+    color: white;
+    border-bottom: 4px solid #d4af37; /* Dorado */
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.header-subtitle {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: #ffeb9c; /* Dorado navideño */
+}
+
+.header-tagline {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #fff5e0;
+}
+
+
+/* =============================== */
+/*     FONDO GENERAL DEL BODY      */
+/* =============================== */
+
+body {
+    background: linear-gradient(180deg, #8b0000, #6e0000);
+    background-attachment: fixed;
+    color: #ffffffd9;
+}
+
+/* Fondo alternativo si usas class="navidad-bg" */
+.navidad-bg {
+    background: linear-gradient(135deg, #4a0f0f, #8b1a1a, #a83232);
+    background-attachment: fixed;
+    color: #ffffffd9;
+}
+
+
+/* =============================== */
+/*               NAVBAR            */
+/* =============================== */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 18px;
+    background: rgba(0, 0, 0, 0.15); /* oscuro suave */
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid #d4af37; /* dorado */
+}
+
+/* Botones del menú */
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #d4af37;
+    transition: all 0.25s ease-out;
+}
+
+/* Hover dinámico */
+.nav-link:hover {
+    background: #d4af37;
+    color: #6b0d0d;
+    transform: scale(1.08);
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.7);
+}
+
+
+/* =============================== */
+/*               FOOTER            */
+/* =============================== */
+
+.footer {
+    margin-top: 50px;
+    padding: 25px 10px;
+    background: #006b2f; /* Verde navidad */
+    color: white;
+    text-align: center;
+    border-top: 4px solid #d4af37; /* Dorado */
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #ffeb9c; /* Dorado claro */
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #fff5e0; /* Blanco cálido */
+}

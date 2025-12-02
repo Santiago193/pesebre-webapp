@@ -1,0 +1,190 @@
+/* ================================== */
+/*      CONTENEDOR PRINCIPAL          */
+/* ================================== */
+
+.contenido-index {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* ================================== */
+/*         SECCIÓN DOBLE (GRID)       */
+/* ================================== */
+
+.contenedor-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.bloque {
+    padding: 10px;
+}
+
+
+
+/* ================================== */
+/*      RESPONSIVE PARA CELULAR       */
+/* ================================== */
+
+@media (max-width: 900px) {
+
+    /* Pasa el grid a formato vertical */
+    .contenedor-doble {
+        grid-template-columns: 1fr;
+    }
+
+    .modelo-3d {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .img-pesebre {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* =============================== */
+/*     ESTILOS PARA INDEX.JSP      */
+/* =============================== */
+
+/* Contenedor general del contenido */
+.contenido-index {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* =============================== */
+/*            INTRO                */
+/* =============================== */
+
+.intro-titulo {
+    font-size: 2.4rem;
+    color: #ffeb9c;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+}
+
+.intro-texto {
+    font-size: 1.1rem;
+    color: #fff5e0;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+/* =============================== */
+/*         SECCIÓN PESEBRE         */
+/* =============================== */
+
+.seccion-pesebre {
+    margin: 60px 0;
+}
+
+.titulo-seccion {
+    font-size: 2rem;
+    color: #ffeb9c;
+    margin-bottom: 15px;
+}
+
+.texto-seccion {
+    font-size: 1.05rem;
+    color: #fff5e0;
+    max-width: 850px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+.img-pesebre {
+    width: 80%;
+    max-width: 600px;
+    border: 3px solid #d4af37;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(212,175,55,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+/* Efecto hover sutil */
+.img-pesebre:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+}
+
+/* =============================== */
+/*       SECCIÓN MODELO 3D         */
+/* =============================== */
+
+.seccion-3d {
+    margin: 60px 0;
+}
+
+.modelo-3d {
+    width: 380px;
+    height: 380px;
+    margin: 20px auto;
+    border: 3px solid #d4af37;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(212,175,55,0.4);
+    background-color: rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.modelo-3d:hover {
+    transform: scale(1.05);
+}
+
+/* =============================== */
+/*     TARJETAS DE ACCESO          */
+/* =============================== */
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.tarjeta {
+    background: rgba(255,255,255,0.05);
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    width: 300px;
+    padding: 25px;
+    color: #fff5e0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+/* Efecto hover */
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(212,175,55,0.6);
+}
+
+/* Botón dentro de las tarjetas */
+.btn-ir {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #6b0d0d;
+    background: #d4af37;
+    transition: 0.25s;
+}
+
+.btn-ir:hover {
+    background: #fff5e0;
+    color: #8b0000;
+}

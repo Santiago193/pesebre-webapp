@@ -1,0 +1,70 @@
+body {
+    background: url('../images/fondo_navidad.png'), #fef6e4;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+}
+
+.titulo-navidad {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #b30000;
+    text-shadow: 0 0 6px #fff,
+                 0 0 10px #ffcf40;
+    font-size: 2.2rem;
+}
+
+.galeria-carreras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.carrera-item {
+    width: 320px;
+    border: 2px solid #d62828;
+    padding: 15px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.carrera-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* Decoración navideña arriba */
+.carrera-item::before {
+    content: "⭐";
+    font-size: 24px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: gold;
+}
+
+.carrera-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #ffcf40;
+}
+
+.carrera-item h2 {
+    margin-bottom: 10px;
+    color: #006400;
+    text-shadow: 0 0 3px #fff;
+}
+
+.carrera-item p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+}
